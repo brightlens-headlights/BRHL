@@ -367,10 +367,10 @@
       .contact-actions { width: 100%; }
       .contact-actions .btn { flex: 1 1 145px; }
       .mobile-cta {
-        display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; position: fixed; z-index: 120; left: 0; right: 0; bottom: 0;
-        padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(5,14,21,.95); backdrop-filter: blur(15px); border-top: 1px solid var(--line);
+        display: block; position: fixed; z-index: 120; left: 0; right: 0; bottom: 0;
+        padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(5,14,21,.96); backdrop-filter: blur(15px); border-top: 1px solid var(--line);
       }
-      .mobile-cta .btn { min-height: 50px; padding: 0 8px; font-size: .82rem; white-space: nowrap; }
+      .mobile-cta .btn { width: 100%; min-height: 54px; padding: 0 18px; font-size: .94rem; white-space: nowrap; border-radius: 14px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -425,7 +425,7 @@
           <h1>Cloudy In.<span>Clear <em>Out.</em></span></h1>
           <p class="lead">BrightLens restores hazy, yellowed, weathered headlight lenses for a cleaner, sharper look. Simple booking. Local service. Results you can see.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">Book an Appointment</a>
+            <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KezvT74o_PU4nR4_vKR1CnMdPHIwxzRiiocebhm-CGu9tRScfE4qdJhXAoZcxUjWcHRca6BRP?gv=true" target="_blank" rel="noopener">Book an Appointment</a>
             <a class="btn btn-outline" href="tel:+14024138694">Call (402) 413-8694</a>
             <a class="btn btn-outline" href="sms:+14024138694" aria-label="Message BrightLens at 402-413-8694">Message Us</a>
           </div>
@@ -580,7 +580,7 @@
                 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 2.8v3.4M17 2.8v3.4M3 9h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 13h3v3H8zM13 13h3v3h-3z" fill="currentColor"/></svg>
                 Book Now — Google Calendar
               </a>
-              <p class="booking-note">This opens Google's complete booking page with a solid background, which is more reliable on phones and prevents the transparent pop-up issue.</p>
+              <p class="booking-note">Select an available time and confirm your appointment through Google Calendar.</p>
             </div>
           </div>
         </div>
@@ -597,7 +597,7 @@
         <div>
           <details open><summary>Where does BrightLens serve?</summary><p>BrightLens serves customers in Lincoln, Nebraska.</p></details>
           <details><summary>Can every cloudy headlight be restored?</summary><p>Not always. Exterior surface haze and oxidation can often be improved, while cracks, moisture inside the assembly, severe damage or internal component problems may require repair or replacement.</p></details>
-          <details><summary>How do I book?</summary><p>Use the Google Calendar appointment button above, call <a href="tel:+14024138694">(402) 413-8694</a>, or <a href="sms:+14024138694">send a message</a>.</p></details>
+          <details><summary>How do I book?</summary><p>Tap <strong>Book Appointment</strong> to choose an available time through Google Calendar, or call <a href="tel:+14024138694">(402) 413-8694</a> or <a href="sms:+14024138694">send a message</a>.</p></details>
           <details><summary>How long does an appointment take?</summary><p>Timing can vary depending on the vehicle and condition of the lenses. Contact BrightLens for an estimate for your specific headlights.</p></details>
         </div>
       </div>
@@ -621,7 +621,7 @@
             </div>
           </div>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="#booking">Book Appointment</a>
+            <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KezvT74o_PU4nR4_vKR1CnMdPHIwxzRiiocebhm-CGu9tRScfE4qdJhXAoZcxUjWcHRca6BRP?gv=true" target="_blank" rel="noopener">Book Appointment</a>
             <a class="btn btn-outline" href="tel:+14024138694">Call Now</a>
             <a class="btn btn-outline" href="sms:+14024138694" aria-label="Message BrightLens at 402-413-8694">Message Us</a>
           </div>
@@ -630,10 +630,8 @@
     </section>
   </main>
 
-  <div class="mobile-cta" aria-label="Quick actions">
-    <a class="btn btn-primary" href="#booking">Book</a>
-    <a class="btn btn-outline" href="tel:+14024138694">Call</a>
-    <a class="btn btn-outline" href="sms:+14024138694" aria-label="Message BrightLens at 402-413-8694">Message</a>
+  <div class="mobile-cta" aria-label="Book an appointment">
+    <a class="btn btn-primary" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KezvT74o_PU4nR4_vKR1CnMdPHIwxzRiiocebhm-CGu9tRScfE4qdJhXAoZcxUjWcHRca6BRP?gv=true" target="_blank" rel="noopener">Book Appointment</a>
   </div>
 
   <footer>
