@@ -23,3 +23,6 @@ GitHub Pages-ready website for **BrightLens Headlight Restoration** in Lincoln, 
 5. Choose the `main` branch and `/ (root)`, then save.
 
 No build step is required. The site is plain HTML, CSS, and JavaScript.
+
+
+Contact actions include call and SMS/message links for (402) 413-8694.
