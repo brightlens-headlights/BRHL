@@ -1,28 +1,42 @@
-# BrightLens Headlight Restoration — Production Website
+# BrightLens Headlight Restoration website
 
-GitHub Pages-ready website for **BrightLens Headlight Restoration** in Lincoln, Nebraska.
+Ready-to-publish static website for **BrightLens Headlight Restoration**, serving **Lincoln, Nebraska**.
 
-## Included
+## What's included
 
-- BrightLens transparent logo used in the header and hero
-- Instagram app-style icon linked to **@BRHEADLIGHT_RESTORATION**
-- Facebook app-style icon linked to the BrightLens Facebook page
-- Phone: **(402) 413-8694**
-- Google Calendar appointment scheduling
-- Responsive mobile layout with a fixed Book Appointment button that opens Google Calendar
-- Click-to-expand before-and-after gallery
-- Local business structured data and basic SEO metadata
-- Favicon generated from the BrightLens logo
+- `index.html` — complete mobile-friendly website
+- `brightlens-logo.webp` and `favicon.png` — business logo
+- `01-black-suv.webp` through `08-silver-sedan.webp` — all eight user-supplied before/after photos (converted to web-friendly WebP, with no crops or retouching)
+- `.nojekyll` — instructs GitHub Pages to serve the website as-is
 
-## Publish on GitHub Pages
+Everything is stored in the root directory, with no assets subfolder, so it is easy to upload.
 
-1. Create or open your GitHub repository.
-2. Upload all files from this folder directly to the repository root. No assets folder is required.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose the `main` branch and `/ (root)`, then save.
+## Upload to GitHub Pages
 
-No build step is required. The site is plain HTML, CSS, and JavaScript.
+1. Download the ZIP and **extract/unzip it**. GitHub Pages needs the files, not the ZIP itself.
+2. On GitHub, create/open your website repository (for example, `brightlens-website`).
+3. Select **Add file → Upload files** and upload `index.html`, all `.webp` files, `favicon.png`, and `.nojekyll` from the unzipped folder. The README is optional.
+4. Commit the changes.
+5. In **Settings → Pages**, select **Deploy from a branch**, choose `main`, folder `/(root)`, and save.
+6. Once GitHub builds the site, you can use its GitHub Pages address.
 
+## Business email
 
-Contact actions include call and SMS/message links for (402) 413-8694.
+The website uses the updated business address **brightlensrestoration26@gmail.com**. The email button is visible under Contact, and the footer links to the same address. No extra configuration is needed.
+
+## Google Calendar booking
+
+The website preserves the Google Calendar appointment booking URL previously provided and uses it in every **Book Appointment** button:
+
+`https://calendar.google.com/calendar/appointments/schedules/AcZssZ0KezvT74o_PU4nR4_vKR1CnMdPHIwxzRiiocebhm-CGu9tRScfE4qdJhXAoZcxUjWcHRca6BRP?gv=true`
+
+**Changing the website email does not transfer your Google Calendar appointment schedule to the new Gmail account.** If you create a new booking schedule under the business Gmail, replace every occurrence of the old URL in `index.html` with your new booking page link.
+
+## Contact and social links
+
+- Phone/text: (402) 413-8694
+- Email: brightlensrestoration26@gmail.com
+- Instagram: https://www.instagram.com/BRHEADLIGHT_RESTORATION/
+- Facebook: https://www.facebook.com/share/1Yhdf8eZmS/
+
+No web host, paid service, or build tool is required. Google fonts and Calendar booking require an internet connection.
