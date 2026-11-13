@@ -257,11 +257,11 @@
     .calendar-target { margin-top: 16px; min-height: 100px; padding: 25px 16px; display: flex; align-items: center; justify-content: center; overflow: visible; border: 1px solid #c9eafb; border-radius: 18px; background: #eef9ff; }
     .google-book-button {
       display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 54px;
-      padding: 14px 20px; border: 0; border-radius: 14px; background: #039BE5; color: #fff;
-      font-weight: 900; font-size: 1rem; letter-spacing: .01em; box-shadow: 0 10px 24px rgba(3,155,229,.24);
+      padding: 14px 20px; border: 1px solid #e8ae18; border-radius: 14px; text-decoration: none; text-align: center; background: #F6BF26; color: #0b1720;
+      font-weight: 900; font-size: 1rem; letter-spacing: .01em; box-shadow: 0 10px 24px rgba(246,191,38,.24);
       transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
     }
-    .google-book-button:hover { transform: translateY(-2px); background: #0288d1; box-shadow: 0 14px 30px rgba(3,155,229,.3); }
+    .google-book-button:hover { transform: translateY(-2px); background: #ffd84d; box-shadow: 0 14px 30px rgba(246,191,38,.3); }
     .google-book-button svg { width: 21px; height: 21px; flex: 0 0 auto; }
     .booking-note { margin: 12px 0 0; color: #61747f; font-size: .84rem; line-height: 1.5; }
     .fallback-link { display: inline-flex; margin-top: 15px; color: #0879a6; font-weight: 800; }
@@ -528,7 +528,7 @@
 </article>
 <article class="service-card">
 <div class="service-icon">03</div>
-<div><h3>Easy scheduling</h3><p>Use the online Google Calendar scheduler below, call, or message BrightLens with questions.</p></div>
+<div><h3>Easy scheduling</h3><p>Book on Google Calendar, call, or message BrightLens with questions.</p></div>
 </article>
 </div>
 </div>
@@ -561,27 +561,17 @@
 </div>
 <div class="booking-card">
 <h3>Schedule an appointment</h3>
-<p>Click the yellow button below to choose a date and time.</p>
+<p>Tap the yellow button to choose your date and time on Google Calendar.</p>
 <div class="calendar-target">
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3bjs7rrEpSUPYZr_E5HgYM3oDArtczBqtdwDIg3cf-wtLbTvhDw-ZEHmxtyq1JfzYnAriRFI3f?gv=true',
-      color: '#F6BF26',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
+<!-- Open the booking page directly instead of Google's popup embed.
+     This keeps the calendar usable on narrow screens and in-app browsers. -->
+<a class="google-book-button" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3bjs7rrEpSUPYZr_E5HgYM3oDArtczBqtdwDIg3cf-wtLbTvhDw-ZEHmxtyq1JfzYnAriRFI3f?gv=true" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment in Google Calendar (opens a new tab)">
+  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg>
+  <span>Book an appointment</span>
+  <span aria-hidden="true">↗</span>
+</a>
 </div>
-<p class="booking-note">Booking button not loading? <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3bjs7rrEpSUPYZr_E5HgYM3oDArtczBqtdwDIg3cf-wtLbTvhDw-ZEHmxtyq1JfzYnAriRFI3f?gv=true" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
+<p class="booking-note">Prefer the direct booking link? <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3bjs7rrEpSUPYZr_E5HgYM3oDArtczBqtdwDIg3cf-wtLbTvhDw-ZEHmxtyq1JfzYnAriRFI3f?gv=true" target="_blank" rel="noopener">Open Google Calendar in a new tab</a>.</p>
 </div>
 </div>
 </div>
